@@ -1,0 +1,44 @@
+.wrapper {
+  margin-top: 100px;
+  padding-bottom: 10px;
+}
+
+.title {
+  text-align: end;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 28px;
+    right: -25px;
+  }
+
+  @media (max-width: 744px) {
+    text-align: center;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.text {
+  display: block;
+  max-width: 407px;
+  @media (max-width: 744px) {
+    text-align: center;
+  }
+}
+
+.img {
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  height: calc(100% + 20px);
+  transform: translateX(-50%);
+}

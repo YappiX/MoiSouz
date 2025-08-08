@@ -1,0 +1,38 @@
+.wrapper {
+  margin: 100px 0;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 43px;
+  @media (max-width: 1240px) {
+    flex-direction: column;
+  }
+}
+
+.price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 40px;
+}

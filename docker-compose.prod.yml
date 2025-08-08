@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+  app:
+    image: ms_front_app
+    build: .
+    container_name: ms_front_app
+    restart: always
+    ports:
+        - 3000:3000
+    volumes:
+      - /var/www/.next/
+      - /var/www/_next/
+      - /var/www/node_modules
+      - ./:/var/www/
+    command: sh -c "npm run start"

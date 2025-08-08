@@ -1,0 +1,152 @@
+.textAround {
+  width: 339px;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+}
+.textPosition1 {
+  text-align: end;
+  top: -40px;
+  left: 130px;
+}
+
+.textPosition2 {
+  text-align: start;
+  top: -40px;
+  left: 655px;
+}
+
+.textPosition3 {
+  top: 60px;
+  left: 75px;
+  text-align: center;
+}
+
+.textPosition4 {
+  top: 60px;
+  left: 740px;
+  text-align: center;
+}
+
+.textPosition5 {
+  width: 249px;
+  text-align: end;
+  top: 140px;
+  left: 60px;
+}
+
+.textPosition6 {
+  width: 302px;
+  text-align: start;
+  top: 140px;
+  left: 820px;
+}
+
+.textPosition7 {
+  width: 339px;
+  text-align: end;
+  top: 245px;
+  left: -35px;
+}
+
+.textPosition8 {
+  width: 313px;
+  text-align: start;
+  top: 245px;
+  left: 830px;
+}
+
+.textPosition9 {
+  text-align: end;
+  top: 385px;
+  left: 10px;
+}
+
+.textPosition10 {
+  text-align: start;
+  top: 385px;
+  left: 780px;
+}
+
+.textPosition11 {
+  text-align: end;
+  top: 470px;
+  left: 110px;
+}
+
+.textPosition12 {
+  text-align: start;
+  top: 470px;
+  left: 680px;
+}
+
+.textPosition13 {
+  text-align: center;
+  top: 556px;
+  left: 390px;
+}
+
+@media (max-width: 1170px) {
+  .textPosition1,
+  .textPosition2,
+  .textPosition3,
+  .textPosition4,
+  .textPosition5,
+  .textPosition6,
+  .textPosition7,
+  .textPosition8,
+  .textPosition9,
+  .textPosition10,
+  .textPosition11,
+  .textPosition12,
+  .textPosition13 {
+    text-align: start;
+  }
+  .textAround {
+    position: static;
+  }
+
+  .containerOfTextAround {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    gap: 25px;
+    justify-content: center;
+    margin: 80px auto 0px;
+  }
+
+  .textAround::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .textAround {
+    width: 280px;
+  }
+}
+
+@media (max-width: 980px) {
+  .containerOfTextAround {
+    grid-template-columns: repeat(2, 280px);
+    gap: 30px;
+  }
+
+  .textPosition13 {
+    display: none;
+  }
+}
+
+@media (max-width: 744px) {
+  .containerOfTextAround {
+    grid-template-columns: 330px;
+    gap: 30px;
+    margin-left: 5%;
+  }
+  .textAround {
+    width: 330px;
+  }
+}

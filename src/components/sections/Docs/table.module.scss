@@ -1,0 +1,23 @@
+.hover {
+  padding: 0px;
+  border-radius: 10px;
+  &:hover {
+    background-color: rgba(72, 128, 255, 0.1);
+  }
+}
+.hoverBold {
+  padding: 0px 4px;
+  border-radius: 10px;
+  background-color: rgba(72, 128, 255, 0.05);
+  &:hover {
+    background-color: rgba(72, 128, 255, 0.1);
+  }
+}
+
+.statusBadge {
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  margin-right: 4px;
+}

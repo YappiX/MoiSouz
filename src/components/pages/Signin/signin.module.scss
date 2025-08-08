@@ -1,0 +1,53 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(243, 244, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper {
+  max-width: 630px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 55px 55px 77px;
+  position: relative;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.help {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+
+.cross {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bottomText {
+  font-weight: 600;
+  color: rgb(32, 34, 36);
+  margin-top: 25px;
+}
+
+.link {
+  color: rgb(90, 140, 255);
+  text-decoration: underline;
+  margin-left: 4px;
+}

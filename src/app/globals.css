@@ -1,0 +1,93 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+/* Chrome */
+@media (forced-colors: active) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.rpv-default-layout__body {
+  padding-top: 0 !important;
+}
+
+.rpv-default-layout__toolbar {
+  height: 0 !important;
+}
+
+.rpv-core__page-layer--single,
+.rpv-default-layout__container,
+.rpv-default-layout__toolbar {
+  border: 0px !important;
+}
+.rpv-core__page-layer:after {
+  box-shadow: none !important;
+}
+.rpv-core__inner-page {
+  background-color: transparent !important;
+}
+
+.html * {
+  padding: revert;
+  margin: revert;
+  color: revert;
+  cursor: revert;
+  text-decoration: revert;
+
+  td {
+    padding: 0.4em;
+    border: 1px solid lightgray;
+  }
+}
+
+.jodit {
+  .jodit-ui-group__about {
+    display: none !important;
+  }
+
+  .jodit-status-bar__item-right:has(a) {
+    margin: 0 !important;
+    a {
+      display: none !important;
+    }
+  }
+}
+
+canvas {
+  border: 1px dotted rgb(234, 235, 235);
+}

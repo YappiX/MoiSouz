@@ -1,0 +1,12 @@
+.btn {
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  @media (max-width: 744px) {
+    bottom: 10px;
+    right: 10px;
+  }
+}

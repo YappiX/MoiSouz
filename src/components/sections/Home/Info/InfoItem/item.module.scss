@@ -1,0 +1,11 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  @media (max-width: 980px) {
+    flex-direction: column;
+    img {
+      align-self: center;
+    }
+  }
+}

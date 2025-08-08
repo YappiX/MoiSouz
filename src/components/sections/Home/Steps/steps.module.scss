@@ -1,0 +1,37 @@
+.wrapper {
+  padding-top: 100px;
+}
+
+.box {
+  position: relative;
+}
+
+.arrow1,
+.arrow2,
+.arrow3,
+.arrow4 {
+  position: absolute;
+  @media (max-width: 1400px) {
+    display: none;
+  }
+}
+
+.arrow1 {
+  top: 210px;
+  left: calc(17000% / 1620);
+}
+
+.arrow2 {
+  top: 120px;
+  left: calc(47000% / 1620);
+}
+.arrow3 {
+  top: 120px;
+  right: calc(47000% / 1620);
+  transform: rotate(90deg);
+}
+.arrow4 {
+  top: 210px;
+  right: calc(17000% / 1620);
+  transform: rotate(-90deg);
+}

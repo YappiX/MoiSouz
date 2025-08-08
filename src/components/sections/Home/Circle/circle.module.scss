@@ -1,0 +1,73 @@
+.wrapper {
+  margin-top: 100px;
+  position: relative;
+}
+
+.textAround {
+  position: absolute;
+  top: 150px;
+  width: 1140px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (max-width: 1170px) {
+    position: static;
+    transform: translateX(0);
+    width: unset;
+  }
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+  margin-bottom: 260px;
+  @media (max-width: 1170px) {
+    margin-bottom: 250px;
+  }
+  @media (max-width: 744px) {
+    margin-bottom: 0px;
+    padding-top: 120px;
+  }
+  @media (max-width: 569px) {
+    margin-bottom: 0px;
+    padding-top: 72px;
+  }
+  img {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+  p {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.circleTitle {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 67px;
+  color: rgb(32, 34, 36);
+  span {
+    color: #fff;
+  }
+  @media (max-width: 744px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.circleText {
+  text-align: center;
+  color: #fff;
+  margin-top: 12px;
+}
+
+.circleBtn {
+  margin-top: 12px;
+  border: transparent !important;
+}

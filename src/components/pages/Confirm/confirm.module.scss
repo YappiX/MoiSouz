@@ -1,0 +1,31 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(243, 244, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper {
+  max-width: 630px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 55px 55px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cross {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.help {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}

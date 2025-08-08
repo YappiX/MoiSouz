@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: white;
+  margin-top: 0;
+  padding-top: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0;
+    height: 100%;
+    width: 1000px;
+    background-color: white;
+  }
+}
+
+.content {
+  width: 200px;
+}
+
+.banner {
+  width: 100%;
+  aspect-ratio: 1;
+  white-space: break-spaces;
+  align-items: end;
+  text-align: left;
+  justify-content: start;
+  font-size: 22px;
+  line-height: 20px;
+}

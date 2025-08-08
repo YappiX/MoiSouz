@@ -1,0 +1,92 @@
+.item,
+.mainItem {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 17px 30px;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+
+.item {
+  border: 4px solid rgb(72, 128, 255);
+}
+
+.mainItem {
+  background-color: rgb(72, 128, 255);
+  padding-bottom: 33px;
+}
+
+.title,
+.mainTitle {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.mainTitle,
+.mainPrice,
+.mainDesc,
+.mainItem li {
+  color: #fff;
+}
+
+.price,
+.mainPrice {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.desc,
+.mainDesc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.list {
+  width: 100%;
+}
+
+.cardHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardFooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.desc2 {
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.mainDesc2 {
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.btn {
+  width: 100%;
+  max-width: 180px;
+}

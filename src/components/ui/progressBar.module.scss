@@ -1,0 +1,45 @@
+.list {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    background: url('/images/line2.svg');
+    position: absolute;
+    left: 9px;
+    z-index: 1;
+    top: 32px;
+    height: calc(100% - 50px);
+    width: 1px;
+  }
+}
+
+.listItem {
+  position: relative;
+  z-index: 2;
+  &:before {
+    content: '';
+    display: block;
+    min-width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 6px;
+    position: relative;
+    background-color: #fff;
+    z-index: 2;
+  }
+}
+
+.listItemActive {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    min-width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+    position: relative;
+    z-index: 2;
+  }
+}
